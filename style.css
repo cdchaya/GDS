@@ -1,0 +1,95 @@
+body{background:#eef3fa;
+	font-family: 'Roboto', sans-serif;	
+	
+	
+		}
+		.main-bg{background-image: url("images/main-bg.png");height: 500px;
+		-webkit-background-size: cover;
+		width:100%;
+		top:0px;
+		left:0px;
+		
+		}	
+		.shape{
+  text-align:center;
+  background-color:#26367b;
+  width:200px;
+  height:80px;
+  line-height:80px;
+  color:white;
+  margin:0px auto;
+  position:relative;
+  float:right;
+}
+.shape:before{
+  content:"";
+  width:0px;
+ 
+  border-bottom:80px solid rgba(38,54,123,1);
+  border-left:68px solid transparent;
+  position:absolute;
+  right:100%;
+  top:0px;
+}
+
+	
+		.shape2{
+  text-align:center;
+  background-color:#0075c9;
+  width:268px;
+  height:550px;
+  line-height:80px;
+  color:white;
+  margin:0px auto;
+  position:relative;
+  float:right;
+}
+.shape2:before {
+    content: "";
+    width: 0px;
+    border-bottom: 550px solid rgba(0,117,201,1);
+    border-left: 450px solid transparent;
+    position: absolute;
+    right: 100%;
+    top: 0px;
+}
+
+.Logo-pad{padding: 14px 93px;   }
+.font-size-Menu{font-size:20px; text-align: left;}
+.font-icons{color:#fff;padding:10px;}
+.main-bg{background-image: url("images/main-bg.png");height: 550px;
+		-webkit-background-size: cover;
+		width:100%;
+		top:0px;
+		left:0px;
+		
+		}
+.main-bg h2{color:#cccccc; padding:50px 80px 3px;font-size:250%;}	
+.main-bg h1{color:#66ccff; padding:0 80px 3px; font-size:300%;}	
+.main-bg p{color:#fff; padding:0 80px;font-size:18px;}	
+.submit-box{width:90%;height:100px;background:#0075c9;margin:130px 80px 3px;}
+input[type="text"]
+{
+    border: 0;
+    border-bottom: 1px solid #fff;
+    outline: 0;
+	background:transparent;
+}
+.submit-box input{width:50%;border-radius:0px;padding:25px 40px 3px;}
+.submit-box button {
+    border-radius: 0px;
+    font-size:15px;
+    padding: 3px 14px;
+	background:#333366;
+    
+}
+.submit-box span{padding-top: 28px;padding-left:10px;}	
+#text-margin{margin-left:40px;margin-top: 11px;}	
+input-placeholder {
+   color: red;
+}
+.shape2 h4 {
+    padding-top: 100px;
+    text-align: left;
+    padding-left: 30px;
+}

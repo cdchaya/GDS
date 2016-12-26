@@ -1,0 +1,26 @@
+body{background:#fff;
+	font-family: 'Roboto', sans-serif;	
+	
+	
+		}
+		.main-bg{background-image: url("images/main-bg.png");
+		height: 500px;
+		-webkit-background-size: cover;
+		width:100%;
+		top:0px;
+		left:0px;
+		
+		}
+		
+.headings{    color: #0066cc;
+			  padding: 16px 0;
+			}	
+
+.develop-bg{background-image: url("images/main-bg.png");
+		height: 500px;
+		-webkit-background-size: cover;
+		width:100%;
+		top:0px;
+		left:0px;
+		
+		}			
