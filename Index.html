@@ -157,7 +157,7 @@
 							<ul>
 								<li>
 									<p id="p1"><b><span>1</span></b>&nbsp;&nbsp;&nbsp; &nbsp;<span><i class="fa fa-lightbulb-o custom-icon"></i></span></p></li>
-								<li>	<p id="p2"><b><span>2</span></b>&nbsp;&nbsp;&nbsp; &nbsp;<span><i class="fa fa-pencil-square-o custom-icon" aria-hidden="true"></i></span></p></li>
+								<li>	<p id="p2" class="apurv"><b><span>2</span></b>&nbsp;&nbsp;&nbsp; &nbsp;<span><i class="fa fa-pencil-square-o custom-icon" aria-hidden="true"></i></span></p></li>
 								<li>	<p id="p3"><b><span>3</span></b>&nbsp;&nbsp;&nbsp; &nbsp;<span><i class="fa fa-cogs custom-icon"></i></span></p></li>
 								<li>	<p id="p4"><b><span>4</span></b>&nbsp;&nbsp;&nbsp; &nbsp;<span><i class="fa
 									fa-cloud-upload custom-icon"></i></span></p></li>
@@ -177,18 +177,18 @@
 								<h4 class="visible-xs text-center">Discover</h4>
 								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 							</div>
-							<!--  <div class="text-block2 pull-right" style="color:#fff;">
+							 <div class="text-block2 pull-right" style="color:#fff;">
 								<h3 class="visible-xs">Design</h3>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-							</div> -->
-							<!--<div class="text-block3 pull-right" style="color:#fff;">
+								this is 2
+							</div>
+							<div class="text-block3 pull-right" style="color:#fff;">
 								<h3 class="visible-xs">Develop</h3>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+								this is 3
 							</div>
 							<div class="text-block4 pull-right" style="color:#fff;">
 								<h3 class="visible-xs">Deploy</h3>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-							</div> -->
+								this is 4
+							</div>
 						</div>
 					
 					
@@ -358,61 +358,58 @@ function closeNav() {
 }
 </script>
 <script>
-			
-	$('.hover-block2').addClass('hidden');
-	$('.hover-block3').addClass('hidden');
-	$('.hover-block4').addClass('hidden');
 
-	$("#p1").click(function(){
-    $('.hover-block1').removeClass('hidden');
-},function(){
-    $('.hover-block1').addClass('hidden');
-});
+$(".text-block").hide();
 
-	$("#p2 span").click(function(){
-    $('.hover-block2').removeClass('hidden');
-},function(){
-    $('.hover-block2').addClass('hidden');
-});
+$(".text-block2").hide();
+$(".text-block3").hide();
+$(".text-block4").hide();
 
-	$("#p3").click(function(){
-    $('.hover-block3').removeClass('hidden');
-},function(){
-    $('.hover-block3').addClass('hidden');
-});
-
-	$("#p4").hover(function(){
-    $('.hover-block4').removeClass('hidden');
-},function(){
-    $('.hover-block4').addClass('hidden');
-});
-
-
-$('.text-block2').addClass('hidden');
-	$('.text-block3').addClass('hidden');
-	$('.text-block4').addClass('hidden');
-
-	$("#p1").hover(function(){
-    $('.text-block').removeClass('hidden');
-},function(){
-    $('.text-block').addClass('hidden');
-});	
-	$("#p2").hover(function(){
-    $('.text-block2').removeClass('hidden');
-},function(){
-    $('.text-block2').addClass('hidden');
-});	
-	$("#p3").hover(function(){
-    $('.text-block3').removeClass('hidden');
-},function(){
-    $('.text-block3').addClass('hidden');
-});	
-	$("#p4").hover(function(){
-    $('.text-block4').removeClass('hidden');
-},function(){
-    $('.text-block4').addClass('hidden');
-});	
+$("#p1").click(function(){
 	
+	$(".text-block2").hide();
+	$(".text-block3").hide();
+	$(".text-block4").hide();
+
+	
+	$(".text-block").show(); 
+	
+});
+
+$("#p2").click(function(){
+	
+	$(".text-block").hide();
+	$(".text-block3").hide();
+	$(".text-block4").hide();
+	
+	$(".text-block2").show(); 
+	
+});
+
+$("#p3").click(function(){
+	
+	$(".text-block2").hide();
+	$(".text-block4").hide();
+	$(".text-block").hide();
+	$(".text-block3").show(); 
+
+	
+});
+
+$("#p4").click(function(){
+	
+	$(".text-block").hide(); 
+	$(".text-block2").hide();
+	$(".text-block3").hide();
+	$(".text-block4").show(); 
+
+});
+
+
+</script>
+<script>
+
+
 		$('.carousel').carousel({
   interval: 3000
 })
